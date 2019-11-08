@@ -1,0 +1,17 @@
+<!--logs.wxml-->
+<import src="../template/billItem/billItem.wxml" />
+<view class="bill">
+ <view class="nav">
+  <view bindtap="nav" data-nav="0" class="{{nav.flag===0?'active':''}}">
+    <text>充值积分</text>
+  </view>
+  <view bindtap="nav" data-nav="1" class="{{nav.flag===1?'active':''}}">
+    <text>发放积分</text>
+  </view>
+ </view>
+ <block wx:for="{{list}}" wx:key="index">
+ <view class=" template {{index===0?'active':''}}">
+  <template is="billItem" data="{{item,nav}}"></template><!--传入参数，必须是对象-->
+ </view>
+ </block>
+</view>

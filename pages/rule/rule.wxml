@@ -1,0 +1,30 @@
+<!--logs.wxml-->
+<view class="rule">
+  <view class="content">
+    <view class="title">-随手礼规则-</view>
+      <view class="item">
+        <text>1</text>
+        <view class="text">随手礼为聚宝易购注册用户专享，消费者需下载聚宝易购APP，并使用手机号码注册账号成功后，方有资格领取。</view>
+      </view>
+      <view class="item">
+        <text>2</text>
+        <view class="text">随手礼为商家通过聚宝易购赠送给消费者，消费者领取后，通过物流快递到消费者手中，所以随手礼免费，但消费者需支付相应快递费。</view>
+      </view>
+      <view class="item">
+        <text>3</text>
+        <view class="text">每个消费者账号针对每种随手礼只能领取一次，并且在商家赠送后24小时内领取，过期作废，消费者无法在领取。</view>
+      </view>
+      <view class="item">
+        <text>4</text>
+        <view class="text">消费者领取随手礼，需填写正确的邮寄地址、收件人及联系方式，因消费者提供信息不真实或错误，导致随手礼无法正常领取，聚宝易购不对此产生的任何后果负责。</view>
+      </view>
+      <view class="item">
+        <text>5</text>
+        <view class="text">消费者在领取随手礼后，一般15日内发货寄出。</view>
+      </view>
+      <view class="item">
+        <text>6</text>
+        <view class="text">本活动规则最终解释权和修订权归聚宝易购所有。</view>
+      </view>
+  </view>
+</view>

@@ -1,0 +1,58 @@
+.grantIntegral {
+  padding: 64rpx 32rpx;
+}
+
+.grantIntegral .b {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333333;
+}
+
+.grantIntegral input {
+  margin: 16rpx 0;
+  height: 80rpx;
+  border: 1rpx solid #c8c7cc;
+  opacity: 1;
+  border-radius: 12rpx;
+  font-size: 28rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+}
+
+.grantIntegral textarea {
+  width: auto !important;
+  height: 174rpx;
+  margin: 16rpx 0;
+  padding: 20rpx;
+  font-size: 28rpx;
+  border: 2rpx solid #c8c7cc;
+  border-radius: 12rpx;
+}
+
+.grantIntegral button {
+  width: 95%;
+  margin: 80rpx auto 0;
+  background: #C30D23;
+  height: 80rpx;
+  font-size: 32rpx;
+  padding: 0;
+}
+
+.grantIntegral .desc {
+  position: relative;
+}
+
+.grantIntegral .desc text {
+  bottom: 20rpx;
+  right: 32rpx;
+  position: absolute;
+  font-size: 24rpx;
+  color: #626468;
+}
+
+.grantIntegral .desc text.active {
+  color: #C30D23;
+}
+/*# sourceMappingURL=grantIntegral.wxss.map */

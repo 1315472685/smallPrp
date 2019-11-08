@@ -1,0 +1,70 @@
+.billItem {
+  padding: 20rpx 32rpx;
+}
+
+.billItem .title {
+  font-size: 28rpx;
+  text-align: center;
+  color: #8e8e93;
+}
+
+.billItem .num {
+  margin: 8rpx 0 20rpx;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.billItem .num .bold {
+  margin-right: 16rpx;
+  font-size: 44rpx;
+  font-weight: bold;
+}
+
+.billItem .num .bold.active {
+  color: #f29600;
+}
+
+.billItem .num image {
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: 16rpx;
+}
+
+.billItem .num text {
+  font-size: 44rpx;
+  font-weight: bold;
+  color: #333333;
+}
+
+.billItem .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.billItem .item text {
+  display: inline-block;
+  width: 152rpx;
+  text-align: left;
+  font-size: 28rpx;
+  color: #8e8e93;
+}
+
+.billItem .item .bold {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: auto;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333333;
+}
+/*# sourceMappingURL=billItem.wxss.map */

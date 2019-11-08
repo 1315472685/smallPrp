@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/profit/profit",
+    "pages/bill/bill",
+    "pages/grantIntegral/grantIntegral",
+    "pages/buyCoupon/buyCoupon",
+    "pages/rule/rule",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#C30D23",
+    "navigationBarTitleText": "聚宝商家",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

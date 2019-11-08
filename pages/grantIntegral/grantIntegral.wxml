@@ -1,0 +1,13 @@
+<!--logs.wxml-->
+<view class="grantIntegral">
+  <view class="b">电话号码</view>
+  <input data-name='phone'  bindinput="model" type="number" value="{{form.phone}}" placeholder="请输入手机号码"/>
+  <view class="b">积分数量</view>
+  <input  data-name='coins'  bindinput="model" type="number" value="{{form.coins}}" placeholder="请输入发放的积分数量"/>
+  <view class="b">备注</view>
+  <view class="desc">
+  <text class="{{form.remark.length>32?'active':''}}">{{form.remark.length}}/32</text>
+    <textarea data-name='remark'  bindinput="model" value="{{form.remark}}"  placeholder="因什么发放积分" />
+  </view>
+  <button type="warn" bindtap="grant"> 发放积分</button>
+</view>

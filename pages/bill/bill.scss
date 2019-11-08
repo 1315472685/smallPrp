@@ -1,0 +1,48 @@
+@import "../template/billItem/billItem.wxss"
+
+.bill {
+  background: #F6F6F6;
+  min-height: -webkit-fill-available;
+  box-sizing: border-box;
+  padding: 16rpx 32rpx;
+
+  .nav {
+    font-size: 32rpx;
+    font-weight: bold;
+    color: rgba(142, 142, 147, 1);
+    display: flex;
+    align-items: center;
+
+    view {
+      padding: 20rpx 0;
+      text-align: center;
+      flex: 1;
+      align-items: center;
+
+      text {
+        padding-bottom: 20rpx;
+        border-bottom: 4rpx solid transparent;
+      }
+
+      &.active {
+        color: rgba(195, 13, 35, 1);
+
+        text {
+          border-bottom: 4rpx solid rgba(195, 13, 35, 1);
+          ;
+        }
+      }
+    }
+
+  }
+
+  .template {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 16rpx;
+    margin-top: 20rpx;
+
+    &.active {
+      margin-top: 34rpx;
+    }
+  }
+}

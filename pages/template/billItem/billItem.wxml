@@ -1,0 +1,72 @@
+<template name="billItem">
+<!-- 积分充值 -->
+  <view wx:if="{{nav.flag===0}}" class="billItem">
+    <view class="title">充值积分</view>
+    <view class="num">
+      <image src="../../img/iconPoint.png" alt=""></image>
+      <text>{{item.points}}</text>
+    </view>
+    <view class="item">
+      <text>充值账户</text>
+      <text class="bold">{{item.phone}}</text>
+    </view>
+    <view class="item">
+      <text>积分余额</text>
+      <text class="bold">{{item.points_ye}}积分</text>
+    </view>
+    <view class="item">
+      <text>充值时间</text>
+      <text class="bold">{{item.end_time}}</text>
+    </view>
+  </view>
+  <!-- 发放积分 -->
+  <view wx:if="{{nav.flag===1}}" class="billItem">
+    <view class="title">发放积分</view>
+    <view class="num">
+      <image src="../../img/iconSend.png" alt=""></image>
+      <text>{{item.coins}}</text>
+    </view>
+    <view class="item">
+      <text>发放账户</text>
+      <text class="bold">{{item.phone}}</text>
+    </view>
+    <view class="item">
+      <text>积分余额</text>
+      <text class="bold">{{item.points}}积分</text>
+    </view>
+    <view class="item">
+      <text>发放时间</text>
+      <text class="bold">{{item.create_time}}</text>
+    </view>
+    <view class="item">
+      <text>备注</text>
+      <text class="bold">{{item.title}}</text>
+    </view>
+  </view>
+  <!-- 分润列表 -->
+   <view wx:if="{{nav.flag===2}}" class="billItem">
+    <view wx:if="{{item.state===0}}" class="title">收益</view>
+    <view wx:if="{{item.state===1}}" class="title">退款</view>
+    <view class="num">
+      <text wx:if="{{item.state===0}}" class="bold active">+</text>
+      <text  wx:if="{{item.state===1}}" class="bold">-</text>
+      <text>￥{{item.merchant_profit}}</text>
+    </view>
+    <view class="item">
+      <text wx:if="{{item.state===0}}">消费账户</text>
+      <text  wx:if="{{item.state===1}}">退款账户</text>
+      <text class="bold">{{item.phone}}</text>
+    </view>
+    <view class="item">
+      <text wx:if="{{item.state===0}}">消费金额</text>
+      <text  wx:if="{{item.state===1}}">退款金额</text>
+      <text class="bold">{{item.use_point}}<block wx:if="{{item.point_type===0}}">聚宝币</block><block wx:elif="{{item.point_type===1}}">折上折金币</block><block wx:elif="{{item.point_type===2}}">折上折银币</block><block wx:elif="{{item.point_type===3}}">折上折铜币</block>
+      </text>
+    </view>
+    <view class="item">
+      <text wx:if="{{item.state===0}}">消费金额</text>
+      <text  wx:if="{{item.state===1}}">退款时间</text>
+      <text class="bold">{{item.create_time}}</text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,6 @@
+.billItem {
+  font-size: 28rpx;
+  color: #8e8e93;
+  padding: 20rpx 32rpx;
+}
+/*# sourceMappingURL=billItem.wxss.map */
